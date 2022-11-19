@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background: #515151;
+}
+
+
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: sticky;
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color: #b8b8b8;
+}
+
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: #4070f4;
+}
+.home{
+  height: 100vh;
+  width: 100%;
+  background: url("/Asset/img/wallpaper.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home_details{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .one{
+  font-size: 25px;
+  color: #ffffff;
+}
+.home .two{
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.home .button{
+  margin: 14px 0;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #dfdfdf;
+  color: rgb(93, 93, 93);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #000000;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+/* Styling Tentang Saya */
+section{
+  padding: 35px;
+}
+section .content{
+  width: 80%;
+  margin: 30px auto;
+  font-family: 'Poppins',sans-serif;
+}
+.tentangsaya .tentangsaya_details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+section .title span{
+  color: #3e3e3e;
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 7px;
+}
+
+
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #2d2d2d;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tentangsaya .tentangsaya_details .leftcontent{
+  width: 56%;
+}
+.tentangsaya .leftcontent img{
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.tentangsaya_details .rightcontent{
+  width: 50%;
+}
+
+section .topic{
+  color: #515151;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.tentangsaya_details .rightcontent p {
+  text-align: justify;
+  color: #000000;
+}
+section .button{
+  margin: 15px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #5b5b5b;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #000000;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+/* skill css */
+.skill{
+  background: #cecece;
+}
+.skill .content{
+  padding: 40px 0;
+}
+.skill .skill_details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill_details .text{
+  width: 50%;
+}
+.skill_details p{
+  color: #202020;
+  text-align: justify;
+}
+.skill .skill_details .pengalaman{
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+.skill_details .pengalaman .num{
+  color: #684242;
+  font-size: 50px;
+}
+.skill_details .pengalaman .exp{
+  color: #000000;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+.skill_details .boxes{
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skill_details .box{
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+.skill_details .boxes .topic{
+  font-size: 20px;
+  color: #000000;
+}
+.skill_details .boxes .per{
+  font-size: 60px;
+  color: #040404;
+}
+
+/*footer*/
+footer{
+  background: #5d5d5d;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
